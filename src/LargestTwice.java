@@ -9,7 +9,7 @@ public class LargestTwice {
         for (int i=0;i<n;i++) {
             arr[i]=scan.nextInt();
         }
-        int index=-1;
+        int index=0;
         int largest=arr[0];
         for (int i=0;i<n;i++) {
             if (arr[i]>largest) {
@@ -19,8 +19,8 @@ public class LargestTwice {
         }
         for(int i=0;i<n;i++){
             if(i!=index && arr[i]*2>largest){
-                System.out.println("-1");
-                break;
+     		System.out.println("-1"); 
+                return;
             } 
         }
         System.out.println(index); 
